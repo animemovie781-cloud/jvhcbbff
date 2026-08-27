@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- ключ в Keystore, которым это зашифровано, не переживает бэкап/переустановку -
+         без этого исключения после восстановления файл будет мёртвым грузом навсегда -->
+    <exclude domain="sharedpref" path="vectr_secure_prefs.xml"/>
+</full-backup-content>

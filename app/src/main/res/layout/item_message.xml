@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="4dp"
+    android:paddingHorizontal="0dp">
+
+    <LinearLayout
+        android:id="@+id/thinking_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/thinking_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingVertical="4dp"
+            android:minHeight="28dp">
+
+            <TextView
+                android:id="@+id/thinking_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/chat_thinking"
+                android:textColor="@color/text_tertiary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/thinking_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="6dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:src="@drawable/ic_thinking"
+                app:tint="@color/text_tertiary" />
+
+            <ImageView
+                android:id="@+id/thinking_chevron"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_chevron"
+                app:tint="@color/text_tertiary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thinking_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:lineSpacingExtra="2dp"
+            android:maxHeight="160dp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bubble_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bubble"
+            android:padding="12dp"
+            android:paddingBottom="26dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:textSize="10sp"
+            android:textColor="@color/text_tertiary"
+            android:paddingEnd="10dp"
+            android:paddingBottom="4dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tool_calls_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/action_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_copy"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_copy"
+            android:scaleType="centerInside"
+            android:padding="4dp"
+            android:contentDescription="Копировать"
+            app:tint="@color/text_tertiary" />
+
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_refresh"
+            android:scaleType="centerInside"
+            android:padding="4dp"
+            android:contentDescription="Перегенерировать"
+            android:layout_marginStart="2dp"
+            app:tint="@color/text_tertiary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/working_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_working_gradient">
+
+        <TextView
+            android:id="@+id/working_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/working_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/sources_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        app:chipSpacingHorizontal="6dp" />
+</LinearLayout>

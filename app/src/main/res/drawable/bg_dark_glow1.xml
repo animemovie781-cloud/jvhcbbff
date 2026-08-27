@@ -1,0 +1,51 @@
+<!-- res/drawable/bg_dark_glow.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Основной фон -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#020816"/>
+        </shape>
+    </item>
+
+    <!-- Нижняя левая большая вспышка -->
+    <item
+        android:width="260dp"
+        android:height="260dp"
+        android:left="-40dp"
+        android:bottom="-40dp"
+        android:gravity="bottom|start">
+
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="130dp"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:startColor="#1A4D9B"
+                android:centerColor="#0B2A57"
+                android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+    <!-- Верхняя правая маленькая вспышка -->
+    <item
+        android:width="180dp"
+        android:height="180dp"
+        android:top="-20dp"
+        android:right="-20dp"
+        android:gravity="top|end">
+
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="90dp"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:startColor="#143D7A"
+                android:centerColor="#0A2345"
+                android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+</layer-list>

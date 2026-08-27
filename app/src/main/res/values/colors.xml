@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme (day) -->
+    <color name="accent">#2563EB</color>
+    <color name="accent_variant">#1D4ED8</color>
+    <color name="accent_muted">#DBEAFE</color>
+    <color name="background">#F4F6F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_sunken">#EEF1F5</color>
+    <color name="surface_raised">#FFFFFF</color>
+    <color name="text_primary">#12141A</color>
+    <color name="text_secondary">#5B6472</color>
+    <color name="text_tertiary">#8B93A1</color>
+    <color name="error_red">#DC2626</color>
+    <color name="success_green">#16A34A</color>
+    <color name="warning_orange">#D97706</color>
+    <color name="code_background">#EEF1F5</color>
+    <color name="bubble_user_bg">#DBEAFE</color>
+    <color name="bubble_user_text">#0F172A</color>
+    <color name="stroke_subtle">#D8DEE6</color>
+    <color name="stroke_strong">#B8C0CC</color>
+    <color name="ripple_accent">#332563EB</color>
+    <color name="success">#16A34A</color>
+    <color name="error">#DC2626</color>
+    <color name="nav_unselected">#8B93A1</color>
+    <color name="composer_bg">#FFFFFF</color>
+    <color name="gradient_start">#F4F6F9</color>
+    <color name="gradient_center">#EEF2F7</color>
+    <color name="gradient_end">#E8EEF8</color>
+    <color name="welcome_grid_stroke">#142563EB</color>
+    <color name="on_accent">#FFFFFF</color>
+</resources>

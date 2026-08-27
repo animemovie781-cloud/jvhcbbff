@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="8dp"
+    android:background="@drawable/bg_pending_diff"
+    android:visibility="gone">
+
+    <!-- Одна компактная строка: файл · stats · действия -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pending_diff_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:text="Main.java" />
+
+            <TextView
+                android:id="@+id/pending_diff_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_tertiary"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:text="@string/pending_more_short" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pending_diff_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:text="+0 −0" />
+
+        <TextView
+            android:id="@+id/btn_pending_review"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:text="@string/pending_diff"
+            android:textSize="11sp"
+            android:textColor="@color/accent"
+            android:background="@drawable/bg_btn_pending_review" />
+
+        <TextView
+            android:id="@+id/btn_pending_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:text="@string/pending_reject"
+            android:textSize="11sp"
+            android:textColor="@color/error"
+            android:background="@drawable/bg_btn_pending_reject" />
+
+        <TextView
+            android:id="@+id/btn_pending_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:text="@string/pending_accept"
+            android:textSize="11sp"
+            android:textColor="@color/success"
+            android:background="@drawable/bg_btn_pending_accept" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pending_bulk_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_pending_reject_all"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/pending_reject_all"
+            android:textColor="@color/error"
+            android:textSize="11sp"
+            android:background="@drawable/bg_btn_pending_reject" />
+
+        <TextView
+            android:id="@+id/btn_pending_accept_all"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:text="@string/pending_accept_all"
+            android:textColor="@color/success"
+            android:textSize="11sp"
+            android:background="@drawable/bg_btn_pending_accept" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_checkpoint_restore"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/pending_rollback_session"
+        android:textColor="@color/warning_orange"
+        android:textSize="11sp"
+        android:background="@drawable/bg_spinner_field"
+        android:visibility="gone" />
+</LinearLayout>

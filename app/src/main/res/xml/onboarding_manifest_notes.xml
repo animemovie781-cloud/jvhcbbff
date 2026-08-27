@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sketchware / Manifest: вставь в AndroidManifest.xml
+
+  1) Permissions:
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="com.termux.permission.RUN_COMMAND" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+
+  2) Package visibility (Android 11+):
+  <queries>
+      <package android:name="com.termux" />
+      <package android:name="com.termux.tasker" />
+  </queries>
+
+  3) Activities (Launcher = WelcomeActivity):
+  <activity android:name=".WelcomeActivity" android:exported="true"
+      android:theme="@style/AppTheme">
+      <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+  </activity>
+  <activity android:name=".PolicyActivity" android:exported="false" android:theme="@style/AppTheme" />
+  <activity android:name=".PermissionsActivity" android:exported="false" android:theme="@style/AppTheme" />
+  <activity android:name=".HomeActivity" android:exported="false" android:theme="@style/AppTheme" />
+
+  Сними LAUNCHER с прежнего MainActivity / HomeActivity.
+-->
+<resources />
