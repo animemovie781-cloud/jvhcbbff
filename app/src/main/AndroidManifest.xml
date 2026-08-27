@@ -1,4 +1,3 @@
-
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="genius.DMTech.Vectr">
@@ -22,6 +21,21 @@
 		android:fullBackupContent="@xml/backup_rules"
 		android:dataExtractionRules="@xml/data_extraction_rules"
 		android:localeConfig="@xml/locales_config">
+
+		<activity
+			android:name=".LanguageActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
 		<activity
 			android:name=".MainActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -46,13 +60,7 @@
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
-			android:windowSoftInputMode="stateHidden"
-			android:exported="true">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
+			android:windowSoftInputMode="stateHidden" />
 		<activity
 			android:name=".PolicyActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -78,10 +86,11 @@
 		</provider>
 		<uses-library
 			android:name="org.apache.http.legacy"
-			android:required="false" />
-<service
-    android:name=".AiStreamService"
-    android:exported="false"
-    android:foregroundServiceType="dataSync"/>
+			android:required="false" />
+
+		<service
+			android:name=".AiStreamService"
+			android:exported="false"
+			android:foregroundServiceType="dataSync"/>
 	</application>
-</manifest>
+</manifest>

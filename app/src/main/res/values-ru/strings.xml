@@ -118,6 +118,7 @@
     <string name="theme_system">Системная</string>
     <string name="lang_russian">Русский</string>
     <string name="lang_english">English</string>
+    <string name="lang_hindi">Хинди</string>
     <string name="toast_theme_restart">Тема применена</string>
     <string name="toast_language_restart">Язык применён</string>
     <string name="provider_deepseek">DeepSeek</string>

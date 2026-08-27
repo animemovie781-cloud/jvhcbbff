@@ -124,6 +124,7 @@
     <string name="theme_system">System</string>
     <string name="lang_russian">Русский</string>
     <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी</string>
     <string name="toast_theme_restart">Theme applied</string>
     <string name="toast_language_restart">Language applied</string>
     <string name="provider_deepseek">DeepSeek</string>

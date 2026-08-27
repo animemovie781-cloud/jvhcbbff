@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vectr</string>
+
+    <!-- Nav -->
+    <string name="nav_files">फ़ाइलें</string>
+    <string name="nav_chat">एजेंट</string>
+    <string name="nav_editor">कोड</string>
+    <string name="nav_settings">विकल्प</string>
+    <string name="action_save">सहेजें</string>
+
+    <!-- Welcome -->
+    <string name="welcome_tagline">AI एजेंट के साथ मोबाइल IDE।\nफ़ाइलें, संपादक और एजेंट — एक ही स्थान पर।</string>
+    <string name="welcome_open_project">प्रोजेक्ट खोलें</string>
+    <string name="welcome_settings">सेटिंग्स</string>
+    <string name="welcome_version">v1.2.1 · DMTech</string>
+
+    <!-- Chat -->
+    <string name="chat_empty_title">Vectr</string>
+    <string name="chat_empty_subtitle">प्रोजेक्ट के बारे में एजेंट से पूछें।\n@path के साथ किसी फ़ाइल का उल्लेख करें</string>
+    <string name="chat_hint">एजेंट से पूछें…</string>
+    <string name="chat_thinking">थोड़ा सोचा</string>
+    <string name="chat_thought_count">सोचा · %1$d</string>
+    <string name="tool_edited_n">%1$d फ़ाइलें संपादित की गईं</string>
+    <string name="tool_read_n">%1$d फ़ाइलें पढ़ी गईं</string>
+    <string name="tool_reading_n">%1$d फ़ाइलें पढ़ रहे हैं</string>
+    <string name="tool_listed_n">%1$d सूचीबद्ध</string>
+    <string name="tool_ran">चलाया</string>
+    <string name="tool_searched">खोजा</string>
+    <string name="tool_fetched">प्राप्त किया</string>
+    <string name="chat_copy">कॉपी करें</string>
+    <string name="chat_regenerate">पुनः उत्पन्न करें</string>
+    <string name="pending_diff">अंतर</string>
+    <string name="pending_reject">पूर्ववत</string>
+    <string name="pending_accept">रखें</string>
+    <string name="pending_reject_all">सभी पूर्ववत करें</string>
+    <string name="pending_accept_all">सभी रखें</string>
+    <string name="pending_rollback_session">↩ एजेंट सत्र पूर्ववत करें</string>
+    <string name="pending_more">+%1$d और</string>
+    <string name="checkpoint_card">↩ चेकपॉइंट · %1$d फ़ाइल(फ़ाइलें)\nपैनल खोलने के लिए टैप करें</string>
+    <string name="history_title">चैट इतिहास</string>
+    <string name="history_search_hint">चैट खोजें…</string>
+    <string name="history_empty_title">अभी तक कोई चैट नहीं</string>
+    <string name="history_empty_subtitle">एक नई बातचीत शुरू करें</string>
+    <string name="new_chat">नई चैट</string>
+    <string name="delete_chat">चैट हटाएं</string>
+
+    <!-- Editor -->
+    <string name="editor_no_file">कोई फ़ाइल नहीं खुली</string>
+    <string name="editor_diagnostics">निदान</string>
+    <string name="editor_fix_selection">चयन ठीक करें</string>
+    <string name="editor_fix_issues">समस्याएं ठीक करें</string>
+    <string name="editor_find">खोजें</string>
+    <string name="editor_replace">बदलें</string>
+    <string name="editor_find_next">अगला</string>
+    <string name="editor_find_prev">पिछला</string>
+    <string name="editor_replace_one">बदलें</string>
+    <string name="editor_replace_all">सभी</string>
+    <string name="editor_undo">पूर्ववत करें</string>
+    <string name="editor_redo">फिर से करें</string>
+    <string name="editor_find_hint">खोजें…</string>
+    <string name="editor_replace_hint">बदलें…</string>
+    <string name="editor_unsaved_title">असुरक्षित परिवर्तन</string>
+    <string name="editor_unsaved_message">«%1$s» में असुरक्षित संपादन हैं। बंद करने से पहले सहेजें?</string>
+    <string name="editor_discard">सहेजें नहीं</string>
+
+    <!-- Files -->
+    <string name="files_no_folder">कोई फ़ोल्डर चयनित नहीं</string>
+    <string name="files_empty_project">कोई प्रोजेक्ट नहीं खुला\n\nएक फ़ोल्डर चुनें — एजेंट फ़ाइलें पढ़ और संपादित कर सकता है</string>
+    <string name="files_open_folder">फ़ोल्डर खोलें</string>
+    <string name="files_up">ऊपर</string>
+    <string name="files_create">बनाएं</string>
+    <string name="files_recent">हालिया</string>
+    <string name="files_actions">कार्रवाई</string>
+    <string name="files_parent_up">एक स्तर ऊपर</string>
+    <string name="files_folder">फ़ोल्डर</string>
+    <string name="files_new_file">नई फ़ाइल</string>
+    <string name="files_new_folder">नया फ़ोल्डर</string>
+    <string name="files_rename">नाम बदलें</string>
+    <string name="files_delete">हटाएं</string>
+    <string name="files_delete_confirm">हटाएं?</string>
+    <string name="files_delete_folder_hint">%1$s (फ़ोल्डर और सामग्री)</string>
+    <string name="files_cancel">रद्द करें</string>
+    <string name="files_hint_filename">name.ext</string>
+    <string name="files_hint_folder">फ़ोल्डर का नाम</string>
+    <string name="files_open_first">पहले एक प्रोजेक्ट खोलें</string>
+    <string name="files_list_error">फ़ोल्डर सूचीबद्ध नहीं किया जा सका</string>
+    <string name="files_no_recent">अभी तक कोई हालिया प्रोजेक्ट नहीं</string>
+    <string name="files_recent_title">हालिया प्रोजेक्ट</string>
+    <string name="files_invalid_name">अवैध नाम</string>
+    <string name="files_renamed">नाम बदला गया</string>
+    <string name="files_rename_failed">नाम नहीं बदला जा सका</string>
+    <string name="files_deleted">हटाया गया</string>
+    <string name="files_delete_failed">हटाया नहीं जा सका</string>
+    <string name="files_created">बनाया गया: %1$s</string>
+    <string name="files_create_failed">बनाया नहीं जा सका</string>
+    <string name="files_exists">पहले से मौजूद है</string>
+    <string name="files_open_folder_fail">फ़ोल्डर नहीं खोला जा सका</string>
+
+    <!-- Settings -->
+    <string name="settings_active_model">सक्रिय मॉडल</string>
+    <string name="settings_provider">प्रदाता</string>
+    <string name="settings_api">API</string>
+    <string name="settings_api_key">API कुंजी</string>
+    <string name="settings_base_url">आधार URL</string>
+    <string name="settings_compat_hint">कोई भी OpenAI-संगत एंडपॉइंट: GPT, Claude proxy, local Ollama…</string>
+    <string name="settings_model">मॉडल</string>
+    <string name="settings_model_id">मॉडल ID</string>
+    <string name="settings_model_id_hint">उदा. gpt-4o या deepseek-v4-pro</string>
+    <string name="settings_thinking">सोचने का मोड</string>
+    <string name="settings_thinking_hint">तर्क / सोचने वाले टोकन</string>
+    <string name="settings_token_limit">उत्तर सीमा</string>
+    <string name="settings_max_tokens">max_tokens</string>
+    <string name="settings_custom_tokens_hint">कस्टम मान</string>
+    <string name="settings_system_prompt">सिस्टम प्रॉम्प्ट</string>
+    <string name="settings_system_prompt_hint">एजेंट के लिए अतिरिक्त निर्देश…</string>
+    <string name="settings_presets">प्रीसेट</string>
+    <string name="settings_save_preset">प्रीसेट सहेजें</string>
+    <string name="settings_appearance">दिखावट</string>
+    <string name="settings_theme">थीम</string>
+    <string name="settings_language">भाषा</string>
+    <string name="theme_dark">गहरा (Dark)</string>
+    <string name="theme_light">हल्का (Light)</string>
+    <string name="theme_system">सिस्टम</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="toast_theme_restart">थीम लागू की गई</string>
+    <string name="toast_language_restart">भाषा लागू की गई</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_step_2">चरण 2 / 3</string>
+    <string name="onboard_step_3">चरण 3 / 3</string>
+    <string name="onboard_welcome_title">AI एजेंट के साथ आपका मोबाइल IDE</string>
+    <string name="onboard_continue">जारी रखें</string>
+    <string name="onboard_back">पीछे</string>
+    <string name="onboard_get_started">शुरू करें</string>
+    <string name="onboard_skip_optional">वैकल्पिक अनुमतियां छोड़ें</string>
+
+    <!-- Runtime UI -->
+    <string name="error_init_failed">स्क्रीन नहीं खोली जा सकी। ऐप को पुनरारंभ करने का प्रयास करें।</string>
+</resources>

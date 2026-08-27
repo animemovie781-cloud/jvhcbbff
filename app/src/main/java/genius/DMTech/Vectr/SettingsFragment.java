@@ -159,6 +159,7 @@ public class SettingsFragment extends Fragment {
         List<VectrDropdown.Option> langs = new ArrayList<>();
         langs.add(new VectrDropdown.Option(getString(R.string.lang_russian)));
         langs.add(new VectrDropdown.Option(getString(R.string.lang_english)));
+        langs.add(new VectrDropdown.Option(getString(R.string.lang_hindi)));
         dropLanguage.setOptions(langs);
 
         List<VectrDropdown.Option> runners = new ArrayList<>();

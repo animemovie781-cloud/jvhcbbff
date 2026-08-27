@@ -8,6 +8,7 @@ public final class OnboardingPrefs {
 
     private static final String PREFS = "vectr_prefs";
     private static final String KEY_DONE = "onboarding_done";
+    private static final String KEY_LANG_PICKED = "lang_picked";
     private static final String KEY_POLICY = "policy_accepted_v1";
     private static final String KEY_NOTIF_ASKED = "onboarding_notif_asked";
     private static final String KEY_TERMUX_ASKED = "onboarding_termux_asked";
@@ -24,6 +25,14 @@ public final class OnboardingPrefs {
 
     public static void setDone(Context context, boolean done) {
         prefs(context).edit().putBoolean(KEY_DONE, done).apply();
+    }
+
+    public static boolean isLangPicked(Context context) {
+        return prefs(context).getBoolean(KEY_LANG_PICKED, false);
+    }
+
+    public static void setLangPicked(Context context, boolean picked) {
+        prefs(context).edit().putBoolean(KEY_LANG_PICKED, picked).apply();
     }
 
     public static boolean isPolicyAccepted(Context context) {
